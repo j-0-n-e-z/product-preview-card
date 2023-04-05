@@ -3,7 +3,7 @@ import './App.css'
 export default function App() {
 	return <div className='w-full h-screen grid lg:place-items-center justify-items-center bg-cream'>
 		<main className='flex lg:flex-row flex-col lg:mt-0 mt-7 lg:w-[600px] lg:h-[450px] w-11/12 h-fit bg-white rounded-xl overflow-hidden'>
-			<section className='lg:w-1/2 w-full'>
+			<section className='lg:w-1/2 w-full flex justify-center'>
 				<img className='lg:block hidden' src='./images/image-product-desktop.jpg' alt="product" />
 				<img className='block lg:hidden' src='./images/image-product-mobile.jpg' alt="product" />
 			</section>
