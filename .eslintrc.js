@@ -2,31 +2,32 @@ export default {
 	env: {
 		browser: true,
 		es2021: true,
-		jest: true
+		jest: true,
 	},
 	extends: [
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:prettier/recommended'
+		'plugin:prettier/recommended',
+		'plugin:tailwindcss/recommended',
 	],
 	overrides: [],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaFeatures: {
-			jsx: true
+			jsx: true,
 		},
 		ecmaVersion: 'latest',
-		sourceType: 'module'
+		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'prettier'],
+	plugins: ['react', '@typescript-eslint', 'prettier', 'tailwindcss'],
 	rules: {
 		'react/function-component-definition': [
 			2,
 			{
 				namedComponents: 'function-declaration',
-				unnamedComponents: 'arrow-function'
-			}
+				unnamedComponents: 'arrow-function',
+			},
 		],
 		'react/prop-types': 0,
 		'react/destructuring-assignment': 0,
@@ -48,6 +49,6 @@ export default {
 		'@typescript-eslint/no-shadow': 1,
 		'@typescript-eslint/ban-types': 0,
 		'react/require-default-props': 0,
-		'@typescript-eslint/no-non-null-assertion': 0
-	}
+		'@typescript-eslint/no-non-null-assertion': 0,
+	},
 }
