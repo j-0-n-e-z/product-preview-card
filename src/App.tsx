@@ -1,7 +1,7 @@
 export default function App() {
 	return (
 		<main className='grid h-screen w-full justify-items-center bg-cream lg:place-items-center'>
-			<h1 className='fixed scale-0'></h1>
+			<h1 className='fixed scale-0'>Product Preview Card</h1>
 			<article className='mt-7 flex h-fit w-11/12 flex-col overflow-hidden rounded-xl bg-white lg:mt-0 lg:h-[450px] lg:w-[600px] lg:flex-row'>
 				<div className='flex w-full justify-center lg:w-1/2'>
 					<img
