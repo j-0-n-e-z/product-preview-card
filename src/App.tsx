@@ -5,7 +5,7 @@ export default function App() {
 			<article className='mt-7 flex h-fit w-11/12 flex-col overflow-hidden rounded-xl bg-white lg:mt-0 lg:h-[450px] lg:w-[600px] lg:flex-row'>
 				<div className='flex w-full justify-center lg:w-1/2'>
 					<img
-						className='hidden  lg:block '
+						className='hidden lg:block'
 						src='./images/image-product-desktop.jpg'
 						alt='product'
 					/>
@@ -15,7 +15,7 @@ export default function App() {
 						alt='product'
 					/>
 				</div>
-				<div className='flex w-full flex-col px-6 py-6 lg:h-full lg:w-1/2 lg:px-8 lg:py-8'>
+				<div className='flex w-full flex-col p-6 lg:h-full lg:w-1/2 lg:p-8'>
 					<span className='mb-3 font-Montserrat text-xs uppercase tracking-widest text-darkGrayishBlue lg:mb-5'>
 						perfume
 					</span>
@@ -30,7 +30,10 @@ export default function App() {
 						<span className='font-Fraunces text-[32px] text-darkCyan'>$149.99</span>
 						<small className='font-Montserrat text-darkGrayishBlue line-through'>$169.99</small>
 					</div>
-					<button className='mt-auto grid w-full grid-flow-col place-items-center justify-center gap-3 rounded-lg bg-darkCyan py-[14px] font-Montserrat text-sm font-bold text-white transition hover:bg-veryDarkBlue'>
+					<button
+						type='button'
+						className='mt-auto grid w-full grid-flow-col place-items-center justify-center gap-3 rounded-lg bg-darkCyan py-[14px] font-Montserrat text-sm font-bold text-white transition hover:bg-veryDarkBlue'
+					>
 						<img
 							src='./images/icon-cart.svg'
 							alt='cart'
